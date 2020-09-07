@@ -1,0 +1,61 @@
+#1 WooCommerce and React | Next.js with WooCommerce | WooCommerce Store | WooCommerce REST API
+#2 WooCommerce and React | Next.js with WooCommerce | WooCommerce Store | WooCommerce REST API
+#3 WooCommerce and React | Next.js with WooCommerce | WooCommerce Store | WooCommerce REST API
+
+
+#4 WooCommerce and React | Next.js with WooCommerce | WooCommerce Store | WooCommerce REST API
+https://www.youtube.com/watch?v=RVr2csxTGrQ
+
+    fetch isomorphic-unfetch
+    getinitialProps
+    https://bootswatch.com/flatly/ Card
+    
+    destructuration props
+    
+    products
+
+#5 WooCommerce and React | Next.js with WooCommerce | WooCommerce Store | WooCommerce REST API
+https://www.youtube.com/watch?v=qnCfY8nlBlw
+
+nextCSS
+npm i @zeit/next-css
+@root create next.config.js
+create style directory style.css
+
+
+#6 WooCommerce and React | Next.js with WooCommerce | WooCommerce Store | WooCommerce REST API
+https://www.youtube.com/watch?v=c7asUTeJHqU&list=PLD8nQCAhR3tQ5GvL6zkPb-ASbvgTiCiUb&index=6
+
+
+use GraphQL instead of REST API to fetch data from wordpress
+3 plugin to Install voir dossier github-repo-woo-next-master>wordpress
+wp-graphql.zip
+wp-graphql-Woocommerce.zip
+wp-graphiql.zip
+
+
+changer client.config.js : graphqlUrl: "https://api-legumes.lerhun.fr/graphql",
+
+installer %npm i graphql graphql-tag apollo-boost apollo-cache-inmemory apollo-link-http react-apollo
+
+Créer Component/ApolooClient.js
+
+#7 WooCommerce React Theme | Add GraphQL| Install WPGraphQL wp-graphql-woocommerce | Apollo Client
+
+Recupération des data via the client apollo
+
+npm run build 
+npm run prod
+transfert /out vers /react-nextjs-express-woo directory lié au sous-domaine IONOS http://test.lerhun.fr 
+
+
+
+#8 WooCommerce React Theme | Add GraphQL| Install WPGraphQL wp-graphql-woocommerce | Apollo Client
+https://www.youtube.com/watch?v=9JgkjGNi2B4
+
+Serverless zeit
+
+#9 WooCommerce React Theme | Add GraphQL| Install WPGraphQL wp-graphql-woocommerce | Apollo Client
+https://www.youtube.com/watch?v=CW7JS1kJKqM
+
+Single Product Page

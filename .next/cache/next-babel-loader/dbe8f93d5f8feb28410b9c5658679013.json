@@ -1,0 +1,1 @@
+{"ast":null,"code":"/** @format */\nconst clientConfig = {\n  Siteurl: \"http://localhost:3000\",\n  graphqlUrl: \"https://api-legumes.lerhun.fr/graphql\"\n};\nmodule.exports = clientConfig;","map":null,"metadata":{},"sourceType":"script"}
