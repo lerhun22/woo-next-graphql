@@ -16,9 +16,7 @@ const Product = withRouter((props) => {
 			{product ? (
 				<div>
 					<div className='card bg-light mb3 p-5'>
-						<div className='card-header'>
-							{product.name}-{product.id}
-						</div>
+						<div className='card-header'>Détail du produit</div>
 						<div className='card-body'>
 							<h4 className='card-title'>{product.name}</h4>
 							<img
@@ -27,7 +25,10 @@ const Product = withRouter((props) => {
 								width='200px'
 								srcSet={product.image.srcSet}
 							/>
-							<p className='card-text'>{product.shortDescription}</p>
+
+							<p className='card-text'>
+								{product.shortDescription.replace(/<\/?[^>]+(>|$)/g, "")}
+							</p>
 						</div>
 					</div>
 				</div>
@@ -44,8 +45,6 @@ Product.getInitialProps = async function (context) {
 	} = context;
 
 	const id = slug ? slug.split("-").pop() : context.query.id;
-
-	console.log(id);
 
 	const PRODUCT_QUERY = gql`
 		query($id: ID!) {
@@ -70,7 +69,7 @@ Product.getInitialProps = async function (context) {
 	const result = await client.query({
 		query: PRODUCT_QUERY,
 		fetchPolicy: "network-only",
-		variables: { id: id },
+		variables: { id },
 	});
 
 	return {

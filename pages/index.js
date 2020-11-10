@@ -1,8 +1,8 @@
 /** @format */
 
 import Layout from "../components/Layout.js";
-import client from "../components/ApolloClient";
-import Product from "../components/Product";
+import client from "../components/ApolloClient.js";
+import Product from "../components/Product.js";
 import gql from "graphql-tag";
 
 const PRODUCTS_QUERY = gql`

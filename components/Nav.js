@@ -1,12 +1,13 @@
 /** @format */
 
 import Link from "next/link";
+import CartIcon from "./cart/cartIcon";
 
 const Nav = () => {
 	return (
 		<div>
 			<nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
-				<a className='navbar-brand' href='#'>
+				<a className='navbar-brand' href='/'>
 					Larawena
 				</a>
 				<button
@@ -29,7 +30,7 @@ const Nav = () => {
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link' href='#'>
+							<a className='nav-link' href='/categories#'>
 								Catégories
 							</a>
 						</li>
@@ -44,6 +45,7 @@ const Nav = () => {
 							</a>
 						</li>
 					</ul>
+					<CartIcon />
 				</div>
 			</nav>
 		</div>
