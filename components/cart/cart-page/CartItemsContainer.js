@@ -20,15 +20,26 @@ const CartItemsContainer = () => {
 		const test2 = JSON.parse(test1);
 		console.warn("Test", test2);
 		const test3 = test2.products;
-		console.warn("Produits dans le panier : ", test3);
+		//console.warn("Produits dans le panier : ", test3);
 		const test4 = test2.products.length;
-		console.warn("Nombre éléments : ", test4);
-		const test5 = test2.products[0].productId;
-		console.warn("ID 1er élément : ", test5);
-		const test6 = test2.products[1].productId;
-		console.warn("ID 2ième élément : ", test6);
+		//console.warn("Nombre éléments : ", test4);
+		//const test5 = test2.products[0].productId;
+		//console.warn("ID 1er élément : ", test5);
+		//const test6 = test2.products[1].productId;
+		//console.warn("ID 2ième élément : ", test6);
 
-		//setCart(updatedCart);
+		if (-1 < test4) {
+			for (let i = 0; i < test4; i++) {
+				const test7 = test2.products[i].productId;
+				console.warn("ID ",i, "ième élément : ", test7);
+			}
+		}
+		
+		test3.map((item) => {
+			console.warn("Nom ", item.name);
+			const updatedCart = removeItemFromCart(item.productId)
+			setCart(updatedCart);
+		});
 	}
 
 	return (
